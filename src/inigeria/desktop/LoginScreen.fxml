@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inigeria.desktop.LoginScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" minHeight="500.0" minWidth="1000.0" prefHeight="500.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane fx:id="pane_1" layoutX="123.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane fx:id="pane_2" layoutX="10.0" layoutY="10.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane fx:id="pane_3" layoutX="20.0" layoutY="20.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane fx:id="pane_4" layoutX="30.0" layoutY="30.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="354.0" layoutY="148.0" text="SAY HELLO" textFill="WHITE" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="354.0" AnchorPane.topAnchor="148.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="274.0" layoutY="178.0" text="CREATE ACCOUNT " textFill="WHITE" AnchorPane.bottomAnchor="307.0" AnchorPane.leftAnchor="274.0" AnchorPane.topAnchor="178.0">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="207.0" text="Welcome to iNigeria e-solutions powered by Cakmerc global i-tech limited" textFill="WHITE" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="184.0" AnchorPane.topAnchor="207.0" />
+                  <Label layoutX="287.0" layoutY="241.0" text="For more inquiries, contatct support" textFill="WHITE" AnchorPane.bottomAnchor="244.0" AnchorPane.leftAnchor="287.0" AnchorPane.topAnchor="241.0" />
+                  <JFXButton buttonType="RAISED" layoutX="311.0" layoutY="182.0" onAction="#Exit" prefHeight="28.0" prefWidth="138.0" ripplerFill="WHITE" style="-fx-background-color: #0dddc1;" text="Exit" AnchorPane.bottomAnchor="310.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </JFXButton>
+                  <Pane layoutX="533.0" layoutY="110.0" prefHeight="555.0" prefWidth="331.0" style="-fx-background-color: #fff;" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="110.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="331.0" style="-fx-background-color: #0dddc1;">
+                           <children>
+                              <Label layoutX="113.0" layoutY="514.0" text="Forgot Password?">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="LoginPane" layoutX="26.0" layoutY="83.0" prefHeight="418.0" prefWidth="277.0" style="-fx-background-color: #fff;">
+                           <effect>
+                              <DropShadow height="9.9" radius="4.2" width="8.9" />
+                           </effect>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="83.0" layoutY="48.0" text="Login Here">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#1ac9bb" glyphName="HAND_ALT_DOWN" layoutX="174.0" layoutY="62.0" size="15" />
+                              <Pane layoutX="26.0" layoutY="124.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <JFXTextField fx:id="Email" focusColor="#405aa800" layoutX="40.0" layoutY="2.0" prefHeight="25.0" prefWidth="184.0" promptText="Email" unFocusColor="#4d4d4d00" />
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="EMAIL" layoutX="13.0" layoutY="21.0" size="20" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="26.0" layoutY="178.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="LOCK" layoutX="12.0" layoutY="21.0" size="20" />
+                                    <JFXPasswordField fx:id="Password" focusColor="#405aa800" layoutX="39.0" layoutY="1.0" prefHeight="25.0" prefWidth="184.0" promptText="Password" unFocusColor="#4d4d4d00" />
+                                 </children>
+                              </Pane>
+                              <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="257.0" onAction="#Login" prefHeight="25.0" prefWidth="225.0" ripplerFill="WHITE" style="-fx-background-color: red;" text="Login" textFill="WHITE" />
+                              <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="300.0" onAction="#Signup" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #0dddc1 #0dddc1;" text="SignUp" />
+                              <MaterialIconView fill="#0dddc1" glyphName="INDETERMINATE_CHECK_BOX" layoutX="129.0" layoutY="397.0" size="20" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="signUpPane" layoutX="27.0" layoutY="84.0" prefHeight="418.0" prefWidth="277.0" style="-fx-background-color: #fff;" visible="false">
+                           <effect>
+                              <DropShadow height="9.9" radius="4.2" width="8.9" />
+                           </effect>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="83.0" layoutY="48.0" text="Signup Here">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView fill="#1ac9bb" glyphName="HAND_ALT_DOWN" layoutX="174.0" layoutY="62.0" size="15" />
+                              <Pane layoutX="26.0" layoutY="93.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <JFXTextField fx:id="signUpName" focusColor="#405aa800" layoutX="40.0" layoutY="2.0" prefHeight="25.0" prefWidth="184.0" promptText="name" unFocusColor="#4d4d4d00" />
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="ACCOUNT" layoutX="13.0" layoutY="21.0" size="20" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="26.0" layoutY="134.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="EMAIL" layoutX="12.0" layoutY="21.0" size="20" />
+                                    <JFXTextField fx:id="signupEmail" focusColor="#405aa800" layoutX="41.0" layoutY="1.0" prefHeight="25.0" prefWidth="184.0" promptText="email" unFocusColor="#4d4d4d00" />
+                                 </children>
+                              </Pane>
+                              <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="286.0" onAction="#signupLogin" prefHeight="25.0" prefWidth="225.0" ripplerFill="WHITE" style="-fx-background-color: red;" text="Login" textFill="WHITE" />
+                              <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="329.0" onAction="#signupAction" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #0dddc1 #0dddc1;" text="SignUp" />
+                              <MaterialIconView fill="#0dddc1" glyphName="INDETERMINATE_CHECK_BOX" layoutX="129.0" layoutY="397.0" size="20" />
+                              <Pane layoutX="26.0" layoutY="174.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="LOCK" layoutX="12.0" layoutY="21.0" size="20" />
+                                    <JFXPasswordField fx:id="signupPassword" focusColor="#405aa800" layoutX="39.0" layoutY="1.0" prefHeight="25.0" prefWidth="184.0" promptText="password" unFocusColor="#4d4d4d00" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="26.0" layoutY="214.0" prefHeight="28.0" prefWidth="225.0" style="-fx-border-color: #0dddc1 #0dddc1;">
+                                 <children>
+                                    <MaterialDesignIconView fill="#0dddc1" glyphName="LOCK" layoutX="12.0" layoutY="21.0" size="20" />
+                                    <JFXPasswordField fx:id="confirmPassword" focusColor="#405aa800" layoutX="39.0" layoutY="1.0" prefHeight="25.0" prefWidth="184.0" promptText="confirm password" unFocusColor="#4d4d4d00" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <JFXButton buttonType="RAISED" layoutX="1275.0" layoutY="14.0" onAction="#minimize" style="-fx-background-color: #0dddc1;" text="minimize" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
